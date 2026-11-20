@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>광물 표본 대장 · My Mineral Log</title>
+<style>
+:root { --bg: #F3EFE4; --paper: #FFFDF7; --ink: #1F1D18; --muted: #6B665A; --deep: #1E3F36; --brass: #C9A96E; --on-deep: #F6F1E4; --line: #DCD4C1; }
+@media (prefers-color-scheme: dark) { :root { --bg: #151412; --paper: #1F1E1B; --ink: #ECE6D8; --muted: #A29C8D; --deep: #22443A; --line: #37342D; } }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.7 -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", "Segoe UI", sans-serif; }
+main { max-width: 640px; margin: 0 auto; padding: 48px max(16px, env(safe-area-inset-left)) 64px; display: grid; gap: 20px; }
+.card { background: var(--deep); border-radius: 20px; padding: 8px; }
+.inner { border: 1px solid var(--brass); border-radius: 14px; padding: 28px 24px; }
+.eyebrow { font: 600 12px/1 ui-monospace, Menlo, monospace; letter-spacing: .18em; color: var(--brass); }
+h1 { margin: 12px 0 6px; font: 700 34px/1.25 "Noto Serif KR", Georgia, serif; color: var(--on-deep); }
+.lead { margin: 0; color: #D9D0BA; }
+nav { display: grid; gap: 10px; }
+nav a { display: flex; justify-content: space-between; align-items: center; background: var(--paper); border: 1px solid var(--line); border-radius: 14px; padding: 16px 18px; color: var(--ink); text-decoration: none; font-weight: 700; }
+nav a span { color: var(--muted); font-weight: 500; font-size: 14px; }
+nav a:focus-visible { outline: 2px solid var(--brass); outline-offset: 2px; }
+footer { color: var(--muted); font-size: 13px; }
+</style>
+</head>
+<body>
+<main>
+  <div class="card"><div class="inner">
+    <div class="eyebrow">MY MINERAL LOG</div>
+    <h1>광물 표본 대장</h1>
+    <p class="lead">광물 표본을 사진·산지·분류와 함께 기록하고, 박물관 같은 라벨로 정리하는 Android 앱이에요.<br>A specimen ledger for mineral collectors.</p>
+  </div></div>
+  <nav>
+    <a href="privacy-policy.html#ko">개인정보처리방침 <span>한국어</span></a>
+    <a href="privacy-policy.html#en">Privacy Policy <span>English</span></a>
+  </nav>
+  <footer>문의는 Google Play 스토어 앱 상세 페이지의 ‘앱 지원’ 항목을 이용해 주세요.</footer>
+</main>
+</body>
+</html>
