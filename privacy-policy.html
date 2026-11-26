@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>개인정보처리방침 · Privacy Policy — My Mineral Log</title>
+<title>개인정보처리방침 · Privacy Policy · プライバシーポリシー — My Mineral Log</title>
 <style>
 :root { --bg: #F6F8F8; --paper: #FFFFFF; --ink: #172720; --muted: #5C6B66; --accent: #2F5D50; --tint: #E6F2EC; --line: #DDE5E2; }
 @media (prefers-color-scheme: dark) { :root { --bg: #10191C; --paper: #142024; --ink: #E8EEEC; --muted: #9AAAA5; --accent: #9ED4C4; --tint: #1C2F2B; --line: #26363A; } }
@@ -12,7 +12,7 @@ body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.7 -appl
 nav { position: sticky; top: 0; display: flex; justify-content: flex-end; gap: 6px; padding: 10px 16px; background: color-mix(in srgb, var(--bg) 88%, transparent); backdrop-filter: blur(8px); }
 nav a { color: var(--accent); text-decoration: none; font-weight: 700; font-size: 14px; padding: 6px 12px; border: 1px solid var(--line); border-radius: 999px; background: var(--paper); }
 main { max-width: 760px; margin: 0 auto; padding: 8px 16px 64px; }
-article { background: var(--paper); border: 1px solid var(--line); border-radius: 20px; padding: 28px 24px; margin-bottom: 28px; }
+article { scroll-margin-top: 64px; background: var(--paper); border: 1px solid var(--line); border-radius: 20px; padding: 28px 24px; margin-bottom: 28px; }
 .app { margin: 0; color: var(--accent); font-weight: 700; font-size: 14px; }
 h1 { margin: 4px 0 2px; font-size: 28px; line-height: 1.3; letter-spacing: -0.02em; }
 .date { margin: 0 0 18px; color: var(--muted); font-size: 14px; }
@@ -23,18 +23,20 @@ ul { margin: 6px 0; padding-left: 22px; }
 li { margin: 4px 0; }
 .links { display: flex; flex-wrap: wrap; gap: 8px 16px; }
 a { color: var(--accent); font-weight: 600; }
+/* Japanese has no spaces between words: break between characters, keeping punctuation off line starts. */
+article:lang(ja) { font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", "Yu Gothic", Meiryo, sans-serif; word-break: normal; line-break: strict; }
 @media (max-width: 520px) { article { padding: 22px 18px; border-radius: 16px; } h1 { font-size: 24px; } }
 </style>
 </head>
 <body>
-<nav><a href="#ko">한국어</a><a href="#en">English</a></nav>
+<nav><a href="#ko">한국어</a><a href="#en">English</a><a href="#ja">日本語</a></nav>
 <main>
 <article id="ko" lang="ko">
-<header><p class="app">광물 표본 대장 (My Mineral Log)</p><h1>개인정보처리방침</h1><p class="date">시행일: 2026년 11월 20일</p></header>
+<header><p class="app">광물 표본 대장 (My Mineral Log)</p><h1>개인정보처리방침</h1><p class="date">시행일: 2026년 11월 26일</p></header>
 <p class="summary">광물 표본 대장(My Mineral Log, 이하 ‘앱’)의 개발자(이하 ‘개발자’)는 「개인정보 보호법」 등 관련 법령을 준수하며, 이용자의 개인정보를 보호하고 이와 관련한 문의를 원활하게 처리하기 위하여 다음과 같이 개인정보처리방침을 수립·공개합니다.</p>
 <section><h2>제1조 (개인정보 처리의 원칙)</h2>
 <p>앱은 회원가입 절차를 두지 않으며, 개발자는 이용자의 정보를 수집하거나 보관하기 위한 별도의 서버를 운영하지 않습니다. 따라서 개발자는 이용자의 개인정보를 수집·저장·이용하지 않습니다.</p>
-<p>다만 Pro 상품(광고 제거 포함)을 구매하지 않은 이용자에게는 Google AdMob 배너 광고가 표시되며, 이 과정에서 제5조에 따라 Google이 광고 식별자 등 일부 기기 정보를 처리할 수 있습니다.</p>
+<p>다만 앱에는 Google AdMob 광고가 표시되며, 이 과정에서 제5조에 따라 Google이 광고 식별자 등 일부 기기 정보를 처리할 수 있습니다.</p>
 
 
 </section>
@@ -47,7 +49,7 @@ a { color: var(--accent); font-weight: 600; }
 </section>
 <section><h2>제3조 (단말기 접근 권한)</h2>
 <p>앱은 다음의 선택적 접근 권한을 해당 기능을 이용하는 시점에만 요청합니다. 이용자는 권한 허용에 동의하지 않을 수 있으며, 이 경우에도 해당 기능을 제외한 앱의 나머지 기능은 정상적으로 이용할 수 있습니다.</p>
-<ul><li>카메라(선택): 표본 라벨의 QR 코드 인식 및 라벨 문자 인식을 위한 촬영. 동영상 및 음성은 녹화하지 않습니다.</li><li>사진(선택): Android 사진 선택 도구를 통하여 이용자가 직접 선택한 사진에 한하여 접근하며, 사진 보관함 전체에는 접근하지 않습니다.</li><li>사진 보관함 저장(선택): 라벨 이미지 또는 표본 사진을 내보낼 때에 한하여 사용합니다.</li><li>인터넷: 광고 표시, Google Play 구매 내역 확인 및 외부 링크 연결에 사용합니다.</li></ul>
+<ul><li>카메라(선택): 표본 라벨의 QR 코드 인식 및 라벨 문자 인식을 위한 촬영. 동영상 및 음성은 녹화하지 않습니다.</li><li>사진(선택): Android 사진 선택 도구를 통하여 이용자가 직접 선택한 사진에 한하여 접근하며, 사진 보관함 전체에는 접근하지 않습니다.</li><li>사진 보관함 저장(선택): 라벨 이미지 또는 표본 사진을 내보낼 때에 한하여 사용합니다.</li><li>인터넷: 광고 표시 및 외부 링크 연결에 사용합니다.</li></ul>
 
 </section>
 <section><h2>제4조 (단말기 내 정보 처리 기능)</h2>
@@ -57,19 +59,18 @@ a { color: var(--accent); font-weight: 600; }
 <p class="links"><a href="https://developers.google.com/ml-kit/terms" rel="noopener">Google ML Kit 이용약관</a></p>
 </section>
 <section><h2>제5조 (광고 서비스 이용에 따른 정보 처리)</h2>
-<p>앱은 Pro 상품(광고 제거 포함)을 구매하지 않은 이용자에게 Google LLC가 제공하는 Google AdMob 배너 광고를 표시합니다. 광고의 제공, 성과 측정 및 부정 이용 방지를 위하여 Google은 광고 식별자(광고 ID), 단말기 및 앱 정보(기종, 운영체제 버전, 언어 등), IP 주소를 기반으로 추정한 대략적 위치, 광고 노출·클릭 기록을 수집·처리할 수 있으며, 이 정보는 Google의 개인정보처리방침에 따라 국외(미국 등)의 서버에서 처리될 수 있습니다.</p>
+<p>앱은 Google LLC가 제공하는 Google AdMob 광고(배너 광고 및 전면 광고)를 표시합니다. 광고의 제공, 성과 측정 및 부정 이용 방지를 위하여 Google은 광고 식별자(광고 ID), 단말기 및 앱 정보(기종, 운영체제 버전, 언어 등), IP 주소를 기반으로 추정한 대략적 위치, 광고 노출·클릭 기록을 수집·처리할 수 있으며, 이 정보는 Google의 개인정보처리방침에 따라 국외(미국 등)의 서버에서 처리될 수 있습니다.</p>
 <p>유럽 경제 지역, 영국 등 관계 법령상 동의가 필요한 지역에서는 최초 실행 시 Google의 동의 화면이 표시되며, 이용자는 앱의 [설정 &gt; 광고 개인정보 설정]에서 언제든지 동의 여부를 변경할 수 있습니다. 광고 ID는 단말기의 [설정 &gt; 개인정보 보호 &gt; 광고]에서 재설정하거나 삭제할 수 있습니다.</p>
-<p>Pro 상품을 구매한 이용자에 대해서는 광고 SDK를 실행하지 않습니다.</p>
 
 <p class="links"><a href="https://policies.google.com/privacy" rel="noopener">Google 개인정보처리방침</a><a href="https://policies.google.com/technologies/partner-sites" rel="noopener">Google의 파트너 앱 정보 이용 방식</a><a href="https://adssettings.google.com" rel="noopener">Google 광고 설정</a></p>
 </section>
-<section><h2>제6조 (유료 상품의 구매)</h2>
-<p>Pro 상품의 구매 및 구매 복원은 Google Play 결제 시스템을 통하여 처리됩니다. 개발자는 카드 번호 등 결제 정보를 제공받지 않으며, 앱은 Google Play를 통하여 해당 계정의 상품 구매 여부만을 확인합니다.</p>
+<section><h2>제6조 (유료 상품)</h2>
+<p>앱에는 유료 상품이 없으며, 앱은 결제를 처리하거나 결제 정보를 다루지 않습니다.</p>
 
 
 </section>
 <section><h2>제7조 (백업·내보내기 및 공유)</h2>
-<p>Excel 내보내기, JSON 백업, 라벨 이미지·PDF 및 사진 내보내기·공유 기능은 이용자가 직접 실행하는 경우에만 동작하며, 파일의 저장 위치와 전송 대상은 이용자가 선택합니다.</p>
+<p>Excel 내보내기(사진 포함 ZIP 포함), 백업 파일(ZIP) 만들기, 라벨 이미지·PDF 및 사진 내보내기·공유 기능은 이용자가 직접 실행하는 경우에만 동작하며, 파일의 저장 위치와 전송 대상은 이용자가 선택합니다.</p>
 <p>자동 백업 기능을 사용하는 경우 백업 파일은 이용자가 지정한 폴더에 저장됩니다. 해당 폴더가 클라우드 서비스와 동기화되는 경우에는 해당 서비스의 개인정보처리방침이 적용됩니다. 백업 파일에는 표본 기록과 사진이 포함되므로 이용자의 주의가 필요합니다.</p>
 
 
@@ -102,17 +103,17 @@ a { color: var(--accent); font-weight: 600; }
 </section>
 <section><h2>제13조 (개인정보처리방침의 변경)</h2>
 <p>이 개인정보처리방침은 관련 법령 및 앱의 기능 변경에 따라 개정될 수 있으며, 개정 시에는 앱 업데이트 및 이 페이지를 통하여 공지합니다.</p>
-<p>이 개인정보처리방침은 2026년 11월 20일부터 시행합니다.</p>
+<p>이 개인정보처리방침은 2026년 11월 26일부터 시행합니다.</p>
 
 
 </section>
 </article>
 <article id="en" lang="en">
-<header><p class="app">My Mineral Log</p><h1>Privacy Policy</h1><p class="date">Effective date: November 20, 2026</p></header>
+<header><p class="app">My Mineral Log</p><h1>Privacy Policy</h1><p class="date">Effective date: November 26, 2026</p></header>
 <p class="summary">The developer (the “Developer”) of My Mineral Log (the “App”) complies with applicable data protection laws and establishes and discloses this Privacy Policy to protect users' personal information and to handle related inquiries promptly.</p>
 <section><h2>Article 1 (Principles of Processing)</h2>
 <p>The App requires no account registration, and the Developer operates no server for collecting or storing user information. Accordingly, the Developer does not collect, store or use users' personal information.</p>
-<p>However, users who have not purchased Pro (which includes ad removal) are shown Google AdMob banner advertisements, in the course of which Google may process certain device information, such as the advertising identifier, as described in Article 5.</p>
+<p>However, the App shows Google AdMob advertisements, in the course of which Google may process certain device information, such as the advertising identifier, as described in Article 5.</p>
 
 
 </section>
@@ -125,7 +126,7 @@ a { color: var(--accent); font-weight: 600; }
 </section>
 <section><h2>Article 3 (Device Permissions)</h2>
 <p>The App requests the following optional permissions only when the user uses the relevant feature. The user may decline any of them, in which case all other features of the App remain available.</p>
-<ul><li>Camera (optional): to read QR codes on specimen labels and to photograph label text for recognition. No video or audio is recorded.</li><li>Photos (optional): access is limited to photographs the user selects through the Android photo picker; the App does not access the entire photo library.</li><li>Saving to photos (optional): used only when exporting label images or specimen photographs.</li><li>Internet: used to display advertisements, verify Google Play purchases and open external links.</li></ul>
+<ul><li>Camera (optional): to read QR codes on specimen labels and to photograph label text for recognition. No video or audio is recorded.</li><li>Photos (optional): access is limited to photographs the user selects through the Android photo picker; the App does not access the entire photo library.</li><li>Saving to photos (optional): used only when exporting label images or specimen photographs.</li><li>Internet: used to display advertisements and open external links.</li></ul>
 
 </section>
 <section><h2>Article 4 (On-Device Processing)</h2>
@@ -135,19 +136,18 @@ a { color: var(--accent); font-weight: 600; }
 <p class="links"><a href="https://developers.google.com/ml-kit/terms" rel="noopener">Google ML Kit Terms</a></p>
 </section>
 <section><h2>Article 5 (Information Processed for Advertising)</h2>
-<p>The App displays Google AdMob banner advertisements, provided by Google LLC, to users who have not purchased Pro (which includes ad removal). To serve advertisements, measure their performance and prevent fraud, Google may collect and process the advertising identifier (advertising ID), device and App information (model, operating system version, language and the like), approximate location inferred from the IP address, and records of advertisement impressions and clicks. This information may be processed on servers outside the user's country, including in the United States, in accordance with Google's Privacy Policy.</p>
+<p>The App displays Google AdMob advertisements (banner and full-screen ads) provided by Google LLC. To serve advertisements, measure their performance and prevent fraud, Google may collect and process the advertising identifier (advertising ID), device and App information (model, operating system version, language and the like), approximate location inferred from the IP address, and records of advertisement impressions and clicks. This information may be processed on servers outside the user's country, including in the United States, in accordance with Google's Privacy Policy.</p>
 <p>In regions where consent is required by law, such as the European Economic Area and the United Kingdom, Google's consent form is displayed on first launch, and the user may change the consent choice at any time under Settings &gt; Ad privacy settings in the App. The advertising ID may be reset or deleted under Settings &gt; Privacy &gt; Ads on the device.</p>
-<p>For users who have purchased Pro, the advertising SDK is not started.</p>
 
 <p class="links"><a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a><a href="https://policies.google.com/technologies/partner-sites" rel="noopener">How Google uses information from partner apps</a><a href="https://adssettings.google.com" rel="noopener">Google Ad Settings</a></p>
 </section>
-<section><h2>Article 6 (In-App Purchases)</h2>
-<p>Purchases and restorations of Pro are processed through Google Play Billing. The Developer does not receive payment information such as card numbers; the App only verifies through Google Play whether the account has purchased the product.</p>
+<section><h2>Article 6 (Paid Products)</h2>
+<p>The App sells nothing and does not process payments or handle payment information.</p>
 
 
 </section>
 <section><h2>Article 7 (Backups, Exports and Sharing)</h2>
-<p>Excel export, JSON backup, label image and PDF export, and photo export and sharing operate only when initiated by the user, and the user selects where files are saved and to whom they are sent.</p>
+<p>Excel export (including the ZIP with photos), backup files (ZIP), label image and PDF export, and photo export and sharing operate only when initiated by the user, and the user selects where files are saved and to whom they are sent.</p>
 <p>When automatic backup is enabled, backup files are saved to the folder designated by the user. If that folder is synchronized with a cloud service, the privacy policy of that service applies. As backup files contain specimen records and photographs, users should keep them secure.</p>
 
 
@@ -180,7 +180,84 @@ a { color: var(--accent); font-weight: 600; }
 </section>
 <section><h2>Article 13 (Amendments)</h2>
 <p>This Privacy Policy may be amended in accordance with changes in applicable laws or in the App's features. Any amendment will be announced through an App update and on this page.</p>
-<p>This Privacy Policy is effective as of November 20, 2026.</p>
+<p>This Privacy Policy is effective as of November 26, 2026.</p>
+
+
+</section>
+</article>
+<article id="ja" lang="ja">
+<header><p class="app">My Mineral Log</p><h1>プライバシーポリシー</h1><p class="date">施行日: 2026年11月26日</p></header>
+<p class="summary">My Mineral Log（以下「本アプリ」）の開発者（以下「開発者」）は、個人情報の保護に関する法令を遵守し、利用者の個人情報を保護するとともに、これに関するお問い合わせに速やかに対応するため、本プライバシーポリシーを定めて公開します。</p>
+<section><h2>第1条（個人情報の取扱いの原則）</h2>
+<p>本アプリには会員登録の手続きがなく、開発者は利用者の情報を収集または保管するためのサーバーを運営していません。したがって、開発者は利用者の個人情報を収集、保管または利用しません。</p>
+<p>ただし、本アプリにはGoogle AdMobの広告が表示され、その過程で、第5条のとおりGoogleが広告IDなど一部の端末情報を処理することがあります。</p>
+
+
+</section>
+<section><h2>第2条（端末に保存される情報）</h2>
+<p>利用者が入力した標本の記録（名前、構成鉱物、産地、日付、価格、サイズ、メモ、タグ、グループ、管理番号、保有状態など）、標本の写真、ウィッシュリスト、ラベルのデザインおよび本アプリの設定は、利用者の端末内にある本アプリ専用の保存領域に保存されます。開発者がこれらの情報を受け取ったり、閲覧したりすることはできません。</p>
+<p>これらの情報は、利用者が本アプリをアンインストールするか、端末の設定で本アプリのデータを消去すると、あわせて削除されます。</p>
+<p>本アプリはAndroidのシステムバックアップを許可しています。利用者が端末の設定でGoogleのバックアップ機能を有効にしている場合、Android OSが本アプリのデータを利用者のGoogleアカウントのバックアップに含め、新しい端末の設定時に復元することがあります。このバックアップはGoogleが管理するもので、開発者はアクセスできません。この設定は、端末の「設定」&gt;「Google」&gt;「バックアップ」で変更できます。</p>
+
+
+</section>
+<section><h2>第3条（端末の権限）</h2>
+<p>本アプリは、利用者が該当する機能を使うときに限り、次の任意の権限を求めます。利用者はいずれも拒否でき、その場合も本アプリのほかの機能はすべて利用できます。</p>
+<ul><li>カメラ（任意）: 標本ラベルのQRコードの読み取り、およびラベルの文字を認識するための撮影に使用します。動画や音声は記録しません。</li><li>写真（任意）: Androidの写真選択ツールで利用者が選んだ写真にのみアクセスし、写真ライブラリ全体にはアクセスしません。</li><li>写真の保存（任意）: ラベル画像や標本写真を書き出すときにのみ使用します。</li><li>インターネット: 広告の表示、外部リンクを開くために使用します。</li></ul>
+
+</section>
+<section><h2>第4条（端末内での処理）</h2>
+<p>QRコードの認識、写真の背景消去およびラベルの文字認識は、Google ML Kitを使って利用者の端末内で行われます。写真や認識された文字が開発者またはGoogleに送信されることはありません。</p>
+<p>ただし、Google ML Kitは、不具合の修正と改善のために、機能の利用状況や性能などの診断情報をGoogleに送信することがあります。この情報に写真や認識内容は含まれません。</p>
+
+<p class="links"><a href="https://developers.google.com/ml-kit/terms" rel="noopener">Google ML Kit 利用規約</a></p>
+</section>
+<section><h2>第5条（広告のために処理される情報）</h2>
+<p>本アプリは、Google LLCが提供するGoogle AdMobの広告（バナー広告および全画面広告）を表示します。広告の配信、効果の測定および不正の防止のために、Googleは広告ID、端末および本アプリの情報（機種、OSのバージョン、言語など）、IPアドレスから推定されるおおよその位置情報、広告の表示およびクリックの記録を収集・処理することがあります。これらの情報は、Googleのプライバシーポリシーに従い、米国を含む利用者の居住国以外のサーバーで処理されることがあります。</p>
+<p>欧州経済領域や英国など、法令により同意が必要な地域では、初回起動時にGoogleの同意フォームが表示され、利用者は本アプリの「設定」&gt;「広告のプライバシー設定」でいつでも同意の内容を変更できます。広告IDは、端末の「設定」&gt;「プライバシー」&gt;「広告」でリセットまたは削除できます。</p>
+
+<p class="links"><a href="https://policies.google.com/privacy" rel="noopener">Google プライバシーポリシー</a><a href="https://policies.google.com/technologies/partner-sites" rel="noopener">Googleによるパートナーアプリの情報の利用</a><a href="https://adssettings.google.com" rel="noopener">Google 広告設定</a></p>
+</section>
+<section><h2>第6条（有料商品）</h2>
+<p>本アプリに有料商品はなく、本アプリは決済を処理せず、決済情報も取り扱いません。</p>
+
+
+</section>
+<section><h2>第7条（バックアップ、エクスポートおよび共有）</h2>
+<p>Excelエクスポート（写真付きZIPを含む）、バックアップファイル（ZIP）、ラベル画像およびPDFの書き出し、写真のエクスポートと共有は、利用者が操作したときにのみ動作し、ファイルの保存先と送信先は利用者が選びます。</p>
+<p>自動バックアップを有効にすると、バックアップファイルは利用者が指定したフォルダに保存されます。そのフォルダがクラウドサービスと同期されている場合は、そのサービスのプライバシーポリシーが適用されます。バックアップファイルには標本の記録と写真が含まれるため、安全に保管してください。</p>
+
+
+</section>
+<section><h2>第8条（外部リンク）</h2>
+<p>利用者がMindat、Wikipedia、webmineralなどの外部サイトへのリンクを選ぶと、そのサイトが端末のブラウザで開き、そのサイトのプライバシーポリシーが適用されます。本アプリが利用者の標本の記録をこれらのサイトに送信することはありません。</p>
+
+
+</section>
+<section><h2>第9条（保有および破棄）</h2>
+<p>開発者は利用者の個人情報を保有していません。端末に保存された情報は、利用者が本アプリ内で削除するか、本アプリをアンインストールすると直ちに破棄されます。利用者が作成したバックアップファイルは、保存した場所から利用者自身が削除する必要があります。</p>
+
+
+</section>
+<section><h2>第10条（利用者の権利）</h2>
+<p>利用者は、本アプリ内でいつでも自分の記録を閲覧、訂正および削除でき、本アプリをアンインストールすることで端末に保存されたすべての情報を削除できます。広告に関する同意の撤回および広告IDのリセットは、第5条に定める方法で行えます。</p>
+
+
+</section>
+<section><h2>第11条（お子様の情報）</h2>
+<p>本アプリは主に子どもを対象としたものではなく、開発者が子どもの個人情報をそれと知りながら収集することはありません。</p>
+
+
+</section>
+<section><h2>第12条（個人情報保護責任者およびお問い合わせ先）</h2>
+<p>本アプリの開発者が個人情報保護責任者を務めます。個人情報に関するお問い合わせやご請求は下記までご連絡ください。開発者は遅滞なく対応します。</p>
+<p>お問い合わせ先: Google Playストアのアプリ詳細ページの「アプリのサポート」に記載されている開発者のメールアドレス</p>
+
+
+</section>
+<section><h2>第13条（改定）</h2>
+<p>本プライバシーポリシーは、関係法令または本アプリの機能の変更に応じて改定されることがあります。改定する場合は、アプリのアップデートおよび本ページでお知らせします。</p>
+<p>本プライバシーポリシーは2026年11月26日から施行します。</p>
 
 
 </section>
